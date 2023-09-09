@@ -1,0 +1,9 @@
+li > a:hover {
+  background-color: #55d8f2;
+  border-radius: 10%;
+}
+
+.custom-toggler-icon {
+  color: #fff;
+  font-size: 28px;
+}
