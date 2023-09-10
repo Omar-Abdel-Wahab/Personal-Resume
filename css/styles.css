@@ -47,6 +47,10 @@ hr {
   margin-bottom: 10%;
 }
 
+.section-margin {
+  margin-bottom: 15%;
+}
+
 @media (min-width: 319px) and (max-width: 480px) {
   .title {
     font-size: 200%;
