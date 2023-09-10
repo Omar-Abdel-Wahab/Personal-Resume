@@ -14,8 +14,24 @@ li > a:hover {
 
 .main {
   padding: 12.5rem;
+  position: relative;
 }
 
 .title {
   font-size: 5rem;
+}
+
+.star {
+  position: absolute;
+  font-size: 5rem;
+}
+
+.star-left {
+  margin-left: 16rem;
+  margin-top: 1.25rem;
+}
+
+.star-right {
+  margin-left: 76rem;
+  margin-top: 9.5rem;
 }
