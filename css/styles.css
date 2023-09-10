@@ -7,3 +7,15 @@ li > a:hover {
   color: #fff;
   font-size: 28px;
 }
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  padding: 12.5rem;
+}
+
+.title {
+  font-size: 5rem;
+}
