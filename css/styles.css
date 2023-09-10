@@ -17,25 +17,37 @@ li > a:hover {
 }
 
 .main {
-  padding: 12.5rem;
-  position: relative;
+  padding: 7%;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 500%;
 }
 
 .star {
-  position: absolute;
-  font-size: 5rem;
-}
-
-.star-left {
-  margin-left: 13%;
-  margin-top: 1%;
+  font-size: 500%;
 }
 
 .star-right {
-  margin-left: 62.5%;
-  margin-top: 9.5rem;
+  margin-right: 0%;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .title {
+    font-size: 200%;
+  }
+
+  .star {
+    font-size: 200%;
+  }
+
+  .star-right {
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .star-right {
+    margin-right: 7.5%;
+  }
 }
