@@ -8,6 +8,10 @@ li > a:hover {
   font-size: 28px;
 }
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }
