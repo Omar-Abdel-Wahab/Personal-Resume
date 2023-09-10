@@ -18,6 +18,7 @@ li > a:hover {
 
 .main {
   padding: 7%;
+  padding-bottom: 15%;
 }
 
 .title {
@@ -30,6 +31,20 @@ li > a:hover {
 
 .star-right {
   margin-right: 0%;
+}
+
+hr {
+  width: 20%;
+  margin: 5% auto;
+  border-width: thick;
+}
+
+.section-title {
+  font-size: 300%;
+}
+
+.section-title-margin {
+  margin-bottom: 10%;
 }
 
 @media (min-width: 319px) and (max-width: 480px) {
