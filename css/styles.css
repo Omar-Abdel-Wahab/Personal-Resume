@@ -47,8 +47,16 @@ hr {
   margin-bottom: 10%;
 }
 
+.section-subtitle-margin {
+  margin-top: 5%;
+}
+
 .section-margin {
   margin-bottom: 15%;
+}
+
+.sub-section-margin {
+  margin-bottom: 10%;
 }
 
 @media (min-width: 319px) and (max-width: 480px) {
