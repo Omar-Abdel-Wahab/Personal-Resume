@@ -59,6 +59,10 @@ hr {
   margin-bottom: 10%;
 }
 
+.social {
+  font-size: 150%;
+}
+
 @media (min-width: 319px) and (max-width: 480px) {
   .title {
     font-size: 200%;
