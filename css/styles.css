@@ -35,7 +35,7 @@ li > a:hover {
 
 hr {
   width: 20%;
-  margin: 5% auto;
+  margin: 0 auto;
   border-width: thick;
 }
 
@@ -44,11 +44,11 @@ hr {
 }
 
 .section-title-margin {
-  margin-bottom: 10%;
+  margin: 10% auto;
 }
 
 .section-subtitle-margin {
-  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .section-margin {
