@@ -63,6 +63,10 @@ hr {
   font-size: 150%;
 }
 
+i {
+  font-size: x-large;
+}
+
 @media (min-width: 319px) and (max-width: 480px) {
   .title {
     font-size: 200%;
