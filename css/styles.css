@@ -47,6 +47,10 @@ hr {
   margin: 10% auto;
 }
 
+.section-with-subsections {
+  margin-bottom: 5%;
+}
+
 .section-subtitle-margin {
   margin-bottom: 5%;
 }
@@ -55,8 +59,12 @@ hr {
   margin-bottom: 15%;
 }
 
+.first-row-margin {
+  margin-bottom: 7%;
+}
+
 .sub-section-margin {
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 .social {
