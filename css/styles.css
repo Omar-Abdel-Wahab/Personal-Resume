@@ -1,54 +1,52 @@
-li > a:hover {
-  background-color: #55d8f2;
-  border-radius: 10%;
+:root {
+  --default: 7%;
+  --huge: 500%;
+}
+
+footer {
+  color: white;
+}
+
+hr {
+  border-width: thick;
+  margin: 0 auto;
+  width: 20%;
+}
+
+i {
+  color: white;
+  font-size: x-large;
 }
 
 .custom-toggler-icon {
-  color: #fff;
-  font-size: 28px;
+  color: white;
 }
 
-.roboto {
-  font-family: "Roboto", sans-serif;
+.first-row-margin {
+  margin-bottom: var(--default);
+}
+
+.intro {
+  margin-bottom: var(--default);
+  padding: var(--default);
 }
 
 .poppins {
   font-family: "Poppins", sans-serif;
 }
 
-.main {
-  padding: 7%;
-  padding-bottom: 15%;
-}
-
-.title {
-  font-size: 500%;
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
 
 .star {
-  font-size: 500%;
-}
-
-.star-right {
-  margin-right: 0%;
-}
-
-hr {
-  width: 20%;
-  margin: 0 auto;
-  border-width: thick;
+  color: black;
+  font-size: var(--huge);
 }
 
 .section-title {
   font-size: 300%;
-}
-
-.section-title-margin {
-  margin: 7% auto;
-}
-
-.section-with-subsections {
-  margin-bottom: 5%;
+  margin: var(--default) auto;
 }
 
 .section-subtitle-margin {
@@ -59,20 +57,17 @@ hr {
   margin-bottom: 15%;
 }
 
-.first-row-margin {
-  margin-bottom: 7%;
-}
-
 .sub-section-margin {
   margin-bottom: 20%;
 }
 
-.social {
-  font-size: 150%;
+.intro-title {
+  font-size: var(--huge);
 }
 
-i {
-  font-size: x-large;
+li > a:hover {
+  background-color: #55d8f2;
+  border-radius: 10%;
 }
 
 @media (min-width: 319px) and (max-width: 480px) {
