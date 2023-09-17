@@ -127,4 +127,8 @@ i {
   .card-mb-xs {
     margin-bottom: 7%;
   }
+
+  .image-mb-xs {
+    margin-bottom: 10%;
+  }
 }
