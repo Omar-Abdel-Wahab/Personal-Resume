@@ -1,6 +1,7 @@
 :root {
   --default: 7%;
   --huge: 500%;
+  --huge-mobile: 400%;
 }
 
 footer {
@@ -22,13 +23,17 @@ i {
   color: white;
 }
 
-.first-row-margin {
+.first-row {
   margin-bottom: var(--default);
 }
 
 .intro {
   margin-bottom: var(--default);
   padding: var(--default);
+}
+
+.intro-title {
+  font-size: var(--huge);
 }
 
 .poppins {
@@ -39,9 +44,8 @@ i {
   font-family: "Roboto", sans-serif;
 }
 
-.star {
-  color: black;
-  font-size: var(--huge);
+.section {
+  margin-bottom: 15%;
 }
 
 .section-title {
@@ -49,20 +53,17 @@ i {
   margin: var(--default) auto;
 }
 
-.section-subtitle-margin {
+.section-subtitle {
   margin-bottom: 5%;
 }
 
-.section-margin {
-  margin-bottom: 15%;
-}
-
-.sub-section-margin {
-  margin-bottom: 20%;
-}
-
-.intro-title {
+.star {
+  color: black;
   font-size: var(--huge);
+}
+
+.sub-section {
+  margin-bottom: 20%;
 }
 
 li > a:hover {
@@ -70,60 +71,40 @@ li > a:hover {
   border-radius: 10%;
 }
 
-@media (min-width: 319px) and (max-width: 480px) {
-  .title {
-    font-size: 200%;
-  }
-
-  .star {
-    font-size: 200%;
-  }
-
-  .star-right {
-    margin-right: 5%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1200px) {
-  .star-right {
-    margin-right: 7.5%;
-  }
-}
-
 @media (min-width: 319px) and (max-width: 576px) {
-  .intro-title {
-    font-size: 400%;
-  }
-
-  .star {
-    font-size: 400%;
-  }
-
-  .section-title-margin {
-    margin: 25% auto 30%;
-  }
-
-  .section-with-subsections {
-    margin-bottom: 15%;
-  }
-
-  .section-subtitle-margin {
-    margin-bottom: 10%;
-  }
-
-  .section-margin {
-    margin-bottom: 25%;
-  }
-
-  .sub-section-margin {
-    margin-bottom: 25%;
-  }
-
   .card-mb-xs {
     margin-bottom: 7%;
   }
 
-  .image-mb-xs {
+  .intro-title {
+    font-size: var(--huge-mobile);
+  }
+
+  .section {
+    margin-bottom: 30%;
+  }
+
+  .section-title {
+    margin-top: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30%;
+  }
+
+  .section-subtitle {
+    margin-bottom: 10%;
+  }
+
+  .star {
+    font-size: var(--huge-mobile);
+  }
+
+  .sub-section {
+    margin-bottom: 30%;
+  }
+
+  .weather-m-xs {
+    margin-top: 5%;
     margin-bottom: 10%;
   }
 }
