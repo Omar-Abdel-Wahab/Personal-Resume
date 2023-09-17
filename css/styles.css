@@ -96,6 +96,14 @@ i {
 }
 
 @media (min-width: 319px) and (max-width: 576px) {
+  .title {
+    font-size: 400%;
+  }
+
+  .star {
+    font-size: 400%;
+  }
+
   .section-title-margin {
     margin: 25% auto 30%;
   }
