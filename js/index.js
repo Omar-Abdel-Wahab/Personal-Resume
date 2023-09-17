@@ -1,28 +1,29 @@
-const collapseButton = document.querySelector("button.navbar-toggler");
-const navbarContent = document.getElementById("navbarSupportedContent");
+const navbarToggler = document.getElementsByClassName("navbar-toggler")[0];
+const navbarContent = document.getElementById("navbar-content");
 
-const navbarItems = document.querySelectorAll("ul.navbar-nav > li");
+const navbarContentItems = Array.from(navbarContent.getElementsByClassName("nav-item"));
 
-navbarItems.forEach((item) => {
+navbarContentItems.forEach((item) => {
     item.addEventListener("click", hideMenu);
 });
 
 document.addEventListener("click", function(event){
     const clickedElement = event.target;
-    if(clickedOutside(clickedElement)){
+    
+    if(isOutsideMenu(clickedElement)){
         hideMenu();
     }
 });
 
 function hideMenu(){
     navbarContent.classList.remove("show");
-    collapseButton.classList.add("collapsed");
+    navbarToggler.classList.add("collapsed");
 }
 
-function clickedOutside(clickedElement){
-    const navbarToggler = clickedElement.classList.contains("navbar-toggler");
-    const customToggler = clickedElement.classList.contains("custom-toggler");
-    if(navbarToggler || customToggler){
+function isOutsideMenu(clickedElement){
+    const isNavbarToggler = clickedElement.classList.contains("navbar-toggler");
+    const isCustomToggler = clickedElement.classList.contains("custom-toggler");
+    if(isNavbarToggler || isCustomToggler){
         return false;
     }
     return true;
