@@ -65,10 +65,6 @@ i {
   font-size: var(--huge);
 }
 
-a.nav-link {
-  color: white;
-}
-
 li > a:hover {
   background-color: #55d8f2;
   border-radius: 10%;
