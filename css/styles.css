@@ -94,3 +94,29 @@ i {
     margin-right: 7.5%;
   }
 }
+
+@media (min-width: 319px) and (max-width: 576px) {
+  .section-title-margin {
+    margin: 25% auto 30%;
+  }
+
+  .section-with-subsections {
+    margin-bottom: 15%;
+  }
+
+  .section-subtitle-margin {
+    margin-bottom: 10%;
+  }
+
+  .section-margin {
+    margin-bottom: 25%;
+  }
+
+  .sub-section-margin {
+    margin-bottom: 25%;
+  }
+
+  .card-mb-xs {
+    margin-bottom: 7%;
+  }
+}
