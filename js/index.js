@@ -1,4 +1,8 @@
 function main(){
+    addHideMenu();
+}
+
+function addHideMenu(){
     addHideMenuToDocument();
     addHideMenuToNavItems();
 }
