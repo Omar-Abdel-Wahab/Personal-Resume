@@ -37,17 +37,28 @@ function getNavbarToggler(){
 }
 
 function addHideMenuToNavbarItems(){
-    const navbarItems = getNavbarItems();
+    const navItems = getNavItems();
     
-    navbarItems.forEach((item) => {
+    navItems.forEach((item) => {
         item.addEventListener("click", hideMenu);
     });    
 }
 
-function getNavbarItems(){
+function getNavItems(){
+    const navItemsCollection = getNavItemsCollection();
+    const navItems = getNavItemsAsArray(navItemsCollection);
+    return navItems;
+}
+
+function getNavItemsCollection(){
     const navbarContent = getNavbarContent();
-    const navbarItems = Array.from(navbarContent.getElementsByClassName("nav-item"));
-    return navbarItems;
+    const navItemsCollection = navbarContent.getElementsByClassName("nav-item");
+    return navItemsCollection;
+}
+
+function getNavItemsAsArray(navItemsCollection){
+    const navItems = Array.from(navItemsCollection);
+    return navItems;
 }
 
 main();
