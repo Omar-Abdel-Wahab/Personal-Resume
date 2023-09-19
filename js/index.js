@@ -1,6 +1,10 @@
 function main(){
+    addHideMenu();
+}
+
+function addHideMenu(){
     addHideMenuToDocument();
-    addHideMenuToNavItems();
+    addHideMenuToNavbarItems();
 }
 
 function addHideMenuToDocument(){
@@ -8,10 +12,22 @@ function addHideMenuToDocument(){
 }
 
 function hideMenu(){
-    const navbarToggler = getNavbarToggler();
-    const navbarContent = getNavbarContent();
+    hideNavbarContent();
+    hideNavbarToggler();
+}
 
+function hideNavbarContent(){
+    const navbarContent = getNavbarContent();
     navbarContent.classList.remove("show");
+}
+
+function getNavbarContent(){
+    const navbarContent = document.getElementById("navbar-content");
+    return navbarContent;
+}
+
+function hideNavbarToggler(){
+    const navbarToggler = getNavbarToggler();
     navbarToggler.classList.add("collapsed");    
 }
 
@@ -20,12 +36,7 @@ function getNavbarToggler(){
     return navbarToggler;
 }
 
-function getNavbarContent(){
-    const navbarContent = document.getElementById("navbar-content");
-    return navbarContent;
-}
-
-function addHideMenuToNavItems(){
+function addHideMenuToNavbarItems(){
     const navbarItems = getNavbarItems();
     
     navbarItems.forEach((item) => {
