@@ -4,7 +4,7 @@ function main(){
 
 function addHideMenu(){
     addHideMenuToDocument();
-    addHideMenuToNavItems();
+    addHideMenuToNavbarItems();
 }
 
 function addHideMenuToDocument(){
@@ -36,7 +36,7 @@ function getNavbarToggler(){
     return navbarToggler;
 }
 
-function addHideMenuToNavItems(){
+function addHideMenuToNavbarItems(){
     const navbarItems = getNavbarItems();
     
     navbarItems.forEach((item) => {
