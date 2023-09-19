@@ -45,8 +45,19 @@ function addHideMenuToNavbarItems(){
 }
 
 function getNavbarItems(){
+    const items = getItemsFromContent();
+    const navbarItems = getItemsAsArray(items);
+    return navbarItems;
+}
+
+function getItemsFromContent(){
     const navbarContent = getNavbarContent();
-    const navbarItems = Array.from(navbarContent.getElementsByClassName("nav-item"));
+    const items = navbarContent.getElementsByClassName("nav-item");
+    return items;
+}
+
+function getItemsAsArray(items){
+    const navbarItems = Array.from(items);
     return navbarItems;
 }
 
